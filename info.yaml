@@ -1,20 +1,20 @@
 library: LELO_TR_IHP13G2
 cell: LELO_TR
 # Your name
-author: Anonymous
+author: Carsten Wulff
 # Your github username
-github: analogicus
+github: wulffern
 # Something funny and descriptive
-tagline: The answer is 42
+tagline: Standard Cell Library
 # Your email, if you so wish
-email: anon@anon.com
+email: carsten@wulff.no
 # Your github site, usually <github username>.github.io
-url: analogicus.github.io
+url: analogicus.com
 doc:
   # Make docs
-  #libraries:
-  #   <library>:
-  #       - <cell>
-  #       - <cell>
+  libraries:
+     LELO_TR_IHP13G2:
+         - LELOTR_TOP
+
 sim:
   # <simdir>: command
