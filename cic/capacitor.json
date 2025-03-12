@@ -1,0 +1,57 @@
+{
+    "cells" : [
+        { "name" : "CAPX1",
+          "boundaryIgnoreRouting": 0,
+          "abstract" : 0,
+          "meta" : {
+              "symbol" : "cic/cap"
+          },
+          "parseSubckt": {
+                "devices": [
+                    {
+                        "class": "mimcap",
+                        "deviceName": "mim",
+                        "name": "C1",
+                        "nodes": [
+                            "A",
+                            "B"
+                        ],
+                        "properties": {
+                            "l": 5.8,
+                            "w": 5.8
+                        }
+                    }
+                ],
+                "instances": [
+                ],
+                "name": "CAPX1",
+                "nodes": [
+                    "B",
+                    "A"
+                ],
+                "properties": {
+                }
+            },
+          "afterNew" :{
+              "addRectangles" : [
+                  ["M6",0,0,70000,70000,""],
+                  ["VIA6",12000,12000,46000,46000,""],
+                  ["MIM",6000,6000,58000,58000,""],
+                  ["MIMC",9000,9000,52000,52000,""],
+                  ["M5",0,0,70000,70000,""]
+              ],
+              "addPortRectangles" : [
+                  ["M6",0,0,70000,5000,"","A"],
+                  ["M5",0,0,70000,5000,"","B"]
+              ]
+          },
+          "afterRoute" : {
+              "addPortOnRects" : [
+                  ["A","M6"],
+                  ["B","M5"]
+              ]
+          }
+
+        }
+    ]
+}

@@ -1,0 +1,101 @@
+magic
+tech ihp-sg13g2
+magscale 1 2
+timestamp 1741734000
+<< checkpaint >>
+rect 0 0 814 320
+<< pdiff >>
+rect 132 30 176 40
+rect 132 40 176 50
+rect 132 50 176 60
+rect 176 30 220 40
+rect 176 40 220 50
+rect 176 50 220 60
+rect 220 30 264 40
+rect 220 40 264 50
+rect 220 50 264 60
+rect 264 30 308 40
+rect 264 40 308 50
+rect 264 50 308 60
+rect 132 60 308 100
+rect 132 100 308 140
+rect 132 140 308 180
+rect 132 180 308 220
+rect 132 220 308 260
+rect 132 260 176 270
+rect 132 270 176 280
+rect 132 280 176 290
+rect 176 260 220 270
+rect 176 270 220 280
+rect 176 280 220 290
+rect 220 260 264 270
+rect 220 270 264 280
+rect 220 280 264 290
+rect 264 260 308 270
+rect 264 270 308 280
+rect 264 280 308 290
+<< ntap >>
+rect 748 -20 880 20
+rect 748 20 880 60
+rect 748 60 880 100
+rect 748 100 880 140
+rect 748 140 880 180
+rect 748 180 880 220
+rect 748 220 880 260
+rect 748 260 880 300
+rect 748 300 880 340
+<< poly >>
+rect 88 -14 572 14
+rect 88 146 572 174
+rect 88 306 572 334
+rect 440 122 616 198
+<< metal1 >>
+rect 440 140 616 180
+rect 748 -20 880 20
+rect 748 20 880 60
+rect 132 60 308 100
+rect 132 60 308 100
+rect 748 60 880 100
+rect 748 100 880 140
+rect 440 140 616 180
+rect 748 140 880 180
+rect 748 140 880 180
+rect 748 180 880 220
+rect 132 220 308 260
+rect 132 220 308 260
+rect 748 220 880 260
+rect 748 260 880 300
+rect 748 300 880 340
+<< pc >>
+rect 462 140 484 160
+rect 462 160 484 180
+rect 484 140 572 180
+rect 572 140 594 160
+rect 572 160 594 180
+<< ntapc >>
+rect 792 140 836 180
+<< pdcontact >>
+rect 154 60 176 80
+rect 154 80 176 100
+rect 176 60 264 100
+rect 264 60 286 80
+rect 264 80 286 100
+rect 154 220 176 240
+rect 154 240 176 260
+rect 176 220 264 260
+rect 264 220 286 240
+rect 264 240 286 260
+<< nwell >>
+rect 0 -100 968 420
+<< labels >>
+flabel metal1 s 440 140 616 180 0 FreeSans 400 0 0 0 G
+port 2 nsew signal bidirectional
+flabel metal1 s 132 60 308 100 0 FreeSans 400 0 0 0 S
+port 3 nsew signal bidirectional
+flabel metal1 s 748 140 880 180 0 FreeSans 400 0 0 0 B
+port 4 nsew signal bidirectional
+flabel metal1 s 132 220 308 260 0 FreeSans 400 0 0 0 D
+port 1 nsew signal bidirectional
+<< properties >>
+string FIXED_BBOX 0 0 814 320
+<< end >>

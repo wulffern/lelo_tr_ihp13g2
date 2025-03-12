@@ -1,0 +1,102 @@
+//--------------------------------------------------------------------
+//        Copyright (c) 2016 Carsten Wulff Software, Norway
+//--------------------------------------------------------------------
+// Created       : wulff at 2016-11-16
+//--------------------------------------------------------------------
+
+{
+    "include" : [
+
+    ],
+    "noPortTranslation" : 1,
+    "patterns" : {
+        "Z" : [ "-",
+                "x"],
+        "Y" : [ "x",
+                "-"]
+    },
+    "cells":
+    [
+        { "name": "TGX2_CV" ,
+          "class" : "Layout::LayoutDigitalCell",
+          "meta" : {
+              "symbol" : "cic/tg"
+          },
+          "beforeRoute" : {
+              "addDirectedRoutes" : [ ["M1","CN","MN0:S-|--MP0:S"],
+                                      ["PO","C","MN0:G-MP0:G"],
+                                      ["M1","B","MN1:D-MP1:D"],
+                                      ["M1","A","MN1:S-MP1:S"],
+                                      ["M1","C","MN0:G|-MN1:G,MN2:G"],
+                                      ["M2","DMY2","MN1$:D|-MN1b:D"],
+                                      ["M2","DMY3","MP1$:S|-MP1b:S"],
+                                      ["M1","DMY4","MP0$:S-|--MP1$:G"],
+                                      ["M1","CN","MP1$:G||MP1b$:G"],
+                                      ["M1","DMY","MN5:G-|--MN5:S"],
+                                      ["M3","DMY1","MP5:S-|--MP5:G","nostartcut"]
+                                    ],
+              "addConnectivityRoutes" : [
+
+              ]
+          },
+          "afterRoute"  : {
+              "addPortOnRects" : [  ["C","M1", "MP0:G"],["B","M2","MN1b:D"],["A","M2","MP1b:S"]
+                                 ]
+          }
+        },
+        { "name" : "DFTRIX1_CV",
+          "class" : "Layout::LayoutDigitalCell",
+          "boundaryIgnoreRouting" : 1,
+          "beforeRoute" : {
+              "addConnectivityRoutes" : [
+                  ["M1","QN$","-|--","onTopL"],
+                  ["M1","^C$","|-","onTopL"]
+              ]
+          },
+          "afterRoute"  : {
+              "addPortOnRects" : [
+                  ["D","M1"],
+                  ["C","M1","XA0:C"]
+              ]
+
+          }
+        },
+         { "name" : "CKDIV2_CV",
+          "composite" : 1,
+		  "boundaryIgnoreRouting" : 0,
+          "class" : "Layout::LayoutDigitalCell",
+          "beforeRoute" : {
+              "addDirectedRoutes" : [
+                  ["M3","QNI", "XA4:XA3:MP0:G-|--XA3:MP0:D"]
+              ],
+              "addConnectivityRoutes" : [
+                  ["M1","CKIB","--|-", "onTopB,offsethigh   "],
+                  ["M2","CKIN","-|--", "onTopL"],
+                  ["M3","CKI$","|-", "onTopT"],
+                  ["M1","CKO50DC","--|-", "onTopR,offsethigh"]
+              ]
+          }
+        },
+        { "name" : "TOP",
+          "class" : "Layout::LayoutDigitalCell",
+          "alternateGroup" : 1,
+          "noPowerRoute" : 1,
+          "boundaryIgnoreRouting": 0,
+          "composite" : 1,
+          "afterPlace" : [
+             {"addPowerRings" :[
+                 ["M1","AVSS"],
+                 ["M1","AVDD"]
+             ]}
+          ],
+          "beforeRoute" : {
+               "addPowerConnections" : [
+                 ["AVDD","X","bottom"],
+                 ["AVSS","X","bottom"]
+               ]
+          }
+
+        }
+
+    ]
+}

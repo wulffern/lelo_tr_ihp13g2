@@ -1,0 +1,75 @@
+magic
+tech ihp-sg13g2
+magscale 1 2
+timestamp 1741734000
+<< checkpaint >>
+rect 0 0 1628 640
+<< metal1 >>
+rect 574 220 614 260
+rect 574 380 614 420
+rect 1014 380 1054 420
+rect 594 540 726 580
+rect 726 540 1034 580
+rect 726 540 766 580
+rect 862 60 1034 100
+rect 862 380 1034 420
+rect 862 60 902 420
+rect 506 380 1122 420
+rect 198 300 374 340
+rect 1254 460 1430 500
+rect 198 460 374 500
+rect 198 140 374 180
+rect 506 540 682 580
+<< poly >>
+rect 242 306 1386 334
+rect 242 146 1386 174
+<< metal4 >>
+rect 946 0 1098 640
+rect 506 0 658 640
+rect 946 0 1098 640
+rect 506 0 658 640
+use LELOTR_NCHDL MN2 
+transform 1 0 0 0 1 0
+box 0 0 814 320
+use LELOTR_NCHDL MN0 
+transform 1 0 0 0 1 160
+box 0 160 814 480
+use LELOTR_NCHDL MN1 
+transform 1 0 0 0 1 320
+box 0 320 814 640
+use LELOTR_PCHDL MP2 
+transform 1 0 814 0 1 0
+box 814 0 1628 320
+use LELOTR_PCHDL MP0 
+transform 1 0 814 0 1 160
+box 814 160 1628 480
+use LELOTR_PCHDL MP1 
+transform 1 0 814 0 1 320
+box 814 320 1628 640
+use LELOTR_cut_M1M4_2x1 xcut0 
+transform 1 0 946 0 1 220
+box 946 220 1098 262
+use LELOTR_cut_M1M4_2x1 xcut1 
+transform 1 0 946 0 1 220
+box 946 220 1098 262
+use LELOTR_cut_M1M4_2x1 xcut2 
+transform 1 0 506 0 1 60
+box 506 60 658 102
+<< labels >>
+flabel metal1 s 198 300 374 340 0 FreeSans 400 0 0 0 A
+port 1 nsew signal bidirectional
+flabel metal1 s 1254 460 1430 500 0 FreeSans 400 0 0 0 CN
+port 3 nsew signal bidirectional
+flabel metal1 s 198 460 374 500 0 FreeSans 400 0 0 0 C
+port 2 nsew signal bidirectional
+flabel metal1 s 198 140 374 180 0 FreeSans 400 0 0 0 RN
+port 4 nsew signal bidirectional
+flabel metal1 s 506 540 682 580 0 FreeSans 400 0 0 0 Y
+port 5 nsew signal bidirectional
+flabel metal4 s 946 0 1098 640 0 FreeSans 400 0 0 0 AVDD
+port 6 nsew signal bidirectional
+flabel metal4 s 506 0 658 640 0 FreeSans 400 0 0 0 AVSS
+port 7 nsew signal bidirectional
+<< properties >>
+string FIXED_BBOX 0 0 1628 640
+<< end >>

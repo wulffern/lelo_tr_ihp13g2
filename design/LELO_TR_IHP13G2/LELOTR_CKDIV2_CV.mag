@@ -1,0 +1,88 @@
+magic
+tech ihp-sg13g2
+magscale 1 2
+timestamp 1741734000
+<< checkpaint >>
+rect 0 0 1628 6080
+<< metal1 >>
+rect 422 740 546 780
+rect 286 940 422 980
+rect 422 740 462 980
+rect 506 700 594 740
+rect 422 4900 546 4940
+rect 286 5100 422 5140
+rect 286 5420 422 5460
+rect 422 4900 462 5460
+rect 506 4860 594 4900
+rect 198 460 374 500
+rect 506 5980 682 6020
+rect 506 4860 682 4900
+rect 198 4140 374 4180
+<< metal2 >>
+rect 286 1580 418 1620
+rect 418 1020 594 1060
+rect 418 1020 458 1620
+<< metal3 >>
+rect 114 5580 286 5620
+rect 114 460 286 500
+rect 114 460 154 5620
+rect 1342 2380 1474 2420
+rect 1034 5180 1474 5220
+rect 1474 2380 1514 5220
+<< metal4 >>
+rect 946 0 1098 6080
+rect 506 0 658 6080
+rect 946 0 1098 6080
+rect 506 0 658 6080
+use LELOTR_TAPCELLB_CV XA12v 
+transform 1 0 0 0 1 0
+box 0 0 1628 320
+use LELOTR_BFX1_CV XA1 
+transform 1 0 0 0 1 320
+box 0 320 1628 800
+use LELOTR_IVX1_CV XA2 
+transform 1 0 0 0 1 800
+box 0 800 1628 1120
+use LELOTR_DFRNQNX1_CV XA4 
+transform 1 0 0 0 1 1120
+box 0 1120 1628 4960
+use LELOTR_IVX1_CV XA3 
+transform 1 0 0 0 1 4960
+box 0 4960 1628 5280
+use LELOTR_ANX1_CV XA5 
+transform 1 0 0 0 1 5280
+box 0 5280 1628 6080
+use LELOTR_cut_M1M2_2x1 xcut0 
+transform 1 0 198 0 1 1580
+box 198 1580 350 1622
+use LELOTR_cut_M1M2_2x1 xcut1 
+transform 1 0 506 0 1 1020
+box 506 1020 658 1062
+use LELOTR_cut_M1M3_2x1 xcut2 
+transform 1 0 198 0 1 5580
+box 198 5580 350 5622
+use LELOTR_cut_M1M3_2x1 xcut3 
+transform 1 0 198 0 1 460
+box 198 460 350 502
+use LELOTR_cut_M1M3_2x1 xcut4 
+transform 1 0 1254 0 1 2380
+box 1254 2380 1406 2422
+use LELOTR_cut_M1M3_2x1 xcut5 
+transform 1 0 946 0 1 5180
+box 946 5180 1098 5222
+<< labels >>
+flabel metal4 s 946 0 1098 6080 0 FreeSans 400 0 0 0 AVDD
+port 1 nsew signal bidirectional
+flabel metal4 s 506 0 658 6080 0 FreeSans 400 0 0 0 AVSS
+port 2 nsew signal bidirectional
+flabel metal1 s 198 460 374 500 0 FreeSans 400 0 0 0 CKI
+port 3 nsew signal bidirectional
+flabel metal1 s 506 5980 682 6020 0 FreeSans 400 0 0 0 CKO
+port 4 nsew signal bidirectional
+flabel metal1 s 506 4860 682 4900 0 FreeSans 400 0 0 0 CKO50DC
+port 5 nsew signal bidirectional
+flabel metal1 s 198 4140 374 4180 0 FreeSans 400 0 0 0 RN
+port 6 nsew signal bidirectional
+<< properties >>
+string FIXED_BBOX 0 0 1628 6080
+<< end >>

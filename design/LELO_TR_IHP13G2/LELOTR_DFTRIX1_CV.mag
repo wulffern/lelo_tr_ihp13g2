@@ -1,0 +1,50 @@
+magic
+tech ihp-sg13g2
+magscale 1 2
+timestamp 1741734000
+<< checkpaint >>
+rect 0 0 1628 4640
+<< metal1 >>
+rect 286 4300 418 4340
+rect 418 3740 594 3780
+rect 418 3740 458 4340
+rect 114 3340 286 3380
+rect 114 4460 286 4500
+rect 114 3340 154 4500
+rect 1254 1580 1430 1620
+rect 198 4460 374 4500
+rect 198 780 374 820
+rect 1254 4460 1430 4500
+rect 506 4540 682 4580
+<< metal4 >>
+rect 946 0 1098 4640
+rect 506 0 658 4640
+rect 946 0 1098 4640
+rect 506 0 658 4640
+use LELOTR_TAPCELLB_CV XA3 
+transform 1 0 0 0 1 0
+box 0 0 1628 320
+use LELOTR_DFRNQNX1_CV XA2 
+transform 1 0 0 0 1 320
+box 0 320 1628 4160
+use LELOTR_IVTRIX1_CV XA0 
+transform 1 0 0 0 1 4160
+box 0 4160 1628 4640
+<< labels >>
+flabel metal1 s 1254 1580 1430 1620 0 FreeSans 400 0 0 0 D
+port 1 nsew signal bidirectional
+flabel metal1 s 198 4460 374 4500 0 FreeSans 400 0 0 0 C
+port 3 nsew signal bidirectional
+flabel metal1 s 198 780 374 820 0 FreeSans 400 0 0 0 CK
+port 2 nsew signal bidirectional
+flabel metal1 s 1254 4460 1430 4500 0 FreeSans 400 0 0 0 CN
+port 4 nsew signal bidirectional
+flabel metal1 s 506 4540 682 4580 0 FreeSans 400 0 0 0 Y
+port 5 nsew signal bidirectional
+flabel metal4 s 946 0 1098 4640 0 FreeSans 400 0 0 0 AVDD
+port 6 nsew signal bidirectional
+flabel metal4 s 506 0 658 4640 0 FreeSans 400 0 0 0 AVSS
+port 7 nsew signal bidirectional
+<< properties >>
+string FIXED_BBOX 0 0 1628 4640
+<< end >>

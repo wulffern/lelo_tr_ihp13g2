@@ -1,0 +1,171 @@
+{
+    "version" : 2,
+    "layers" : {
+        "CO"  : { "alias" : "", "number" : 33, "datatype" : -1,  "material" : "cut",       "previous" : "PO",  "next" : "M1", "color" : "yellow"},
+        "NDIFFC"  : { "alias" : "ndcontact", "number" : 33, "datatype" : -1,  "material" : "cut",       "previous" : "NDIFF",  "next" : "M1", "color" : "yellow"},
+        "PDIFFC"  : { "alias" : "pdcontact", "number" : 33, "datatype" : -1,  "material" : "cut",       "previous" : "PDIFF",  "next" : "M1", "color" : "yellow"},
+        "PTAPC"  : { "alias" : "ptapc", "number" : 33, "datatype" : -1,  "material" : "cut",       "previous" : "PDIFF",  "next" : "M1", "color" : "yellow"},
+        "NTAPC"  : { "alias" : "ntapc", "number" : 33, "datatype" : -1,  "material" : "cut",       "previous" : "PDIFF",  "next" : "M1", "color" : "yellow"},
+        "PCO"  : { "alias" : "pc", "number" : 33, "datatype" : -1,  "material" : "cut",       "previous" : "PO",  "next" : "M1", "color" : "yellow"},
+
+        "OD"  : { "alias" : "","number" : 22,  "datatype" : -1,  "material" : "diffusion", "previous" : "",  "next" : "PTAPC", "pin" : "OD_pin", "color" : "green" },
+        "PDIFF"  : { "alias" : "pdiff","number" : 22,  "datatype" : -1,  "material" : "diffusion", "previous" : "",  "next" : "CO", "pin" : "OD_pin", "color" : "green" },
+        "PTAP"  : { "alias" : "ptap","number" : 22,  "datatype" : -1,  "material" : "diffusion", "previous" : "",  "next" : "CO", "pin" : "OD_pin", "color" : "green" },
+        "NTAP"  : { "alias" : "ntap","number" : 22,  "datatype" : -1,  "material" : "diffusion", "previous" : "",  "next" : "CO", "pin" : "OD_pin", "color" : "green" },
+        "PDIFFB"  : { "alias" : "pdiff","number" : 22,  "datatype" : -1,  "material" : "diffusion", "previous" : "",  "next" : "CO", "pin" : "OD_pin", "color" : "green" },
+        "NDIFF"  : { "alias" : "ndiff","number" : 22,  "datatype" : -1,  "material" : "diffusion", "previous" : "",  "next" : "CO", "pin" : "OD_pin", "color" : "green" },
+        "NDIFFB"  : { "alias" : "ndiff","number" : 22,  "datatype" : -1,  "material" : "diffusion", "previous" : "",  "next" : "CO", "pin" : "OD_pin", "color" : "green" },
+
+        "DMYPO"  : { "alias" : "poly","number" : 30,  "datatype" : -1,  "material" : "poly",      "previous" : "",  "next" : "CO", "pin" : "PO_pin" , "color" : "red"},
+        "PO"  : { "alias" : "poly","number" : 30,  "datatype" : -1,  "material" : "poly",      "previous" : "",  "next" : "CO", "pin" : "PO_pin" , "color" : "red"},
+        "OP"  : { "alias" : "","number" : 30,  "datatype" : -1,  "material" : "poly",      "previous" : "",  "next" : "CO", "pin" : "PO_pin" , "color" : "yellow"},
+        "POB"  : { "alias" : "poly","number" : 30,  "datatype" : -1,  "material" : "implant",      "previous" : "",  "next" : "CO", "pin" : "PO_pin" , "color" : "red"},
+
+        "POXR"  : { "alias" : "xpolyres","number" : 30,  "datatype" : -1,  "material" : "poly",      "previous" : "",  "next" : "CO", "pin" : "PO_pin" , "color" : "red"},
+        "CPOXR"  : { "alias" : "xpolycontact","number" : 30,  "datatype" : -1,  "material" : "poly",      "previous" : "",  "next" : "CO", "pin" : "PO_pin" , "color" : "red"},
+        "POR"  : { "alias" : "ppolyres","number" : 30,  "datatype" : -1,  "material" : "poly",      "previous" : "",  "next" : "CO", "pin" : "PO_pin" , "color" : "red"},
+        "CPOR"  : { "alias" : "polycontact","number" : 30,  "datatype" : -1,  "material" : "poly",      "previous" : "",  "next" : "CO", "pin" : "PO_pin" , "color" : "red"},
+
+        "PO_pin" : { "alias" : "","number" : 30, "datatype" : -1 },
+        "M1" : { "alias" : "metal1",
+                 "number" : 34, "datatype": -1,
+                 "material" : "metal",
+                 "previous" : "",
+                 "next" : "VIA1",
+                 "pin" : "M1_pin" ,
+                 "res" : "M1_res",
+                 "color" : "blue"
+               },
+
+        "M1_pin" : { "alias" : "", "number" : 34, "datatype" : 237, "material" : "implant","fill":"fill","color" : "blue"},
+        "M1_res" : { "alias" : "rmetal1", "number" : 110, "datatype" : 11, "material" : "metalres"},
+
+        "M2" : { "alias" : "metal2","number" : 36, "datatype" : -1, "material" : "metal", "previous" : "VIA1",  "next" : "VIA2", "pin" : "M2_pin" , "res" : "M2_res", "color" : "goldenrod" },
+        "M2_pin" : { "alias" : "","number" : 36, "datatype" : 237, "material" : "implant","fill":"fill","color" : "goldenrod"},
+        "M2_res" : { "alias" : "rmetal2","number" : 110, "datatype" : 12, "material" : "metalres"},
+
+        "M3" : { "alias" : "metal3","number" : 42, "datatype" : -1, "material" : "metal", "previous" : "VIA2",  "next" : "VIA3", "pin" : "M3_pin" , "res" : "M3_res", "color" : "aqua"},
+        "M3_pin" : { "alias" : "","number" : 42, "datatype" : 237, "material" : "implant","fill":"fill","color" : "aqua"},
+        "M3_res" : { "alias" : "rmetal3","number" : 110, "datatype" : 13, "material" : "metalres"},
+
+        "M4" : { "alias" : "metal4","number" : 46, "datatype" : -1, "material" : "metal", "previous" : "VIA3",  "next" : "VIA4", "pin" : "M4_pin" , "res" : "M4_res", "color" : "darkgreen"},
+        "M4_pin" : { "alias" : "","number" : 46, "datatype" : 237, "material" : "implant","fill":"fill","color" : "darkgreen"},
+        "M4_res" : { "alias" : "rmetal4","number" : 110, "datatype" : 14, "material" : "metalres"},
+
+        "M5" : { "alias" : "metal5","number" : 81, "datatype" : -1, "material" : "metal", "previous" : "VIA4",  "next" : "VIA5", "pin" : "M5_pin", "res" : "M5_res", "color" : "brown" },
+        "M5_pin" : { "alias" : "","number" : 81, "datatype" : 237, "material" : "implant","fill":"fill","color" : "brown"},
+        "M5_res" : { "alias" : "rmetal5","number" : 110, "datatype" : 15, "material" : "metalres"},
+
+        "M6" : { "alias" : "metal6","number" : 81, "datatype" : -1, "material" : "metal", "previous" : "VIA4",  "next" : "VIA5", "pin" : "M5_pin", "res" : "M5_res", "color" : "brown" },
+        "M6_pin" : { "alias" : "","number" : 81, "datatype" : 237, "material" : "implant","fill":"fill","color" : "brown"},
+        "M6_res" : { "alias" : "rmetal6","number" : 110, "datatype" : 15, "material" : "metalres"},
+
+        "VIA1" : { "alias" : "via1","number" : 35, "datatype" : -1, "material" : "cut", "previous" : "M1", "next" : "M2" ,"color" : "blue","fill" : "fill"},
+        "VIA2" : { "alias" : "via2","number" : 38, "datatype" : -1, "material" : "cut", "previous" : "M2", "next" : "M3" ,"color" : "yellow","fill" : "fill"},
+        "VIA3" : { "alias" : "via3","number" : 40, "datatype" : -1, "material" : "cut", "previous" : "M3", "next" : "M4" ,"color" : "cyan","fill" : "fill"},
+        "VIA4" : { "alias" : "via4","number" : 41, "datatype" : -1, "material" : "cut", "previous" : "M4", "next" : "M5" ,"color" : "green","fill" : "fill"},
+        "VIA5" : { "alias" : "via5","number" : 82, "datatype" : -1, "material" : "cut", "previous" : "M5", "next" : "M6" ,"color" : "brown","fill" : "fill"},
+        "VIA6" : { "alias" : "via6","number" : 82, "datatype" : -1, "material" : "cut", "previous" : "M5", "next" : "M6" ,"color" : "purple","fill" : "fill"},
+        "PR" : { "alias" : "","number" : 0, "datatype" : 20 ,"fill" : "nofill","color" : "red"},
+
+        "NW" : { "alias" : "nwell","number" : 21, "datatype" : -1 , "material" : "implant", "color" : "red","fill" : "nofill"},
+        "PP" : { "alias" : "pdiff","number" : 31, "datatype" : -1 , "material" : "implant", "color" : "pink","fill" : "nofill"},
+        "PPE" : { "alias" : "pdiff","number" : 31, "datatype" : -1 , "material" : "implant", "color" : "pink","fill" : "nofill"},
+        "NP" : { "alias" : "ndiff","number" : 32, "datatype" : -1 , "material" : "implant", "color" : "cyan","fill" : "nofill"},
+        "NPE" : { "alias" : "ndiff","number" : 32, "datatype" : -1 , "material" : "implant", "color" : "cyan","fill" : "nofill"},
+
+
+        "NWT" : { "alias" : "nwell","number" : 21, "datatype" : -1 , "material" : "implant", "color" : "red","fill" : "nofill"},
+        "PWT" : { "alias" : "pwell","number" : 21, "datatype" : -1 , "material" : "implant", "color" : "red","fill" : "nofill"},
+
+        "MIM" : { "alias" : "mimcap","number" : 21, "datatype" : -1 , "material" : "implant", "color" : "aqua","fill" : "nofill"},
+        "MIMC" : { "alias" : "mimcapcontact","number" : 21, "datatype" : -1 , "material" : "implant", "color" : "cyan","fill" : "nofill"},
+
+
+        "TXT" : { "alias" : "","number" : 58, "datatype" :-1 , "material" : "marker" , "color" : "black","fill" : "fill"}
+    },
+    "technology" :{
+        "gamma" : 100,
+        "grid" : 5,
+        "spiceunit":1,
+        "techlib" : "ihp-sg13g2",
+        "devices" : {
+            "rppo" : { "name" : "sg13g2_pr__rhigh",
+                       "devicetype" : "XR",
+                       "ports" : ["P","M"]
+                     },
+            "mim" : { "name" : "sg13g2_pr__cap_cmim",
+                      "devicetype" : "XC",
+                      "ports" : ["c0","c1"],
+                       "propertymap" : {
+                             "l" : { "name" : "l", "str" : "e-6"},
+                             "w" : { "name" : "w", "str" : "e-6"},
+                             "L" : { "name" : "l", "str" : "e-6"},
+                             "W" : { "name" : "w", "str" : "e-6"}
+                         }
+                    },
+            "nch_lvt" : { "name" : "sg13g2_pr__sg13_lv_nmos",    "ports" : ["D","G","S","B"],
+                          "devicetype" : "XM"
+                        },
+            "pch_lvt"     : { "inherit" : "nch_lvt", "devicetype" : "XM", "name" : "sg13g2_pr__sg13_lv_pmos" },
+            "pch"     : { "inherit" : "nch_lvt", "devicetype" : "XM", "name" : "sg13g2_pr__sg13_lv_pmos" },
+            "nch"     : { "inherit" : "nch_lvt", "devicetype" : "XM", "name" : "sg13g2_pr__sg13_lv_nmos" }
+
+        },
+        "symbol_lib" : "cpdk",
+        "symbol_libs" : ["../../cpdk/design/cic",
+                         "../../cpdk/design/cic_wbulk",
+                         "$PDK_ROOT/$PDK/libs.tech/xschem/sg13g2_pr"
+                        ]
+    },
+    "rules" : {
+        "ROUTE": { "horizontalgrid": 22, "verticalgrid" : 20 },
+
+        "PPT"   : { "enclosure" : 0},
+        "NPT"   : { "enclosure" : 0},
+        "NWT"   : { "enclosure" : 0},
+        "PFIELD"   : { "enclosure" : 0, "digitalspace" : 0},
+
+        "PP"   : { "enclosure" : 40, "ODencOpposite" : 40,"digitalspace" :0},
+        "NP"   : { "enclosure" : 40, "ODencOpposite" : 40,"digitalspace" :0},
+        "NW"   : { "enclosure" : 50, "digitalspace" : 0},
+
+
+
+        "CO"   : { "space" : 20, "width" : 18 , "height" : 18},
+        "CO"   : { "space" : 20, "width" : 18 , "height" : 18},
+        "PTAPC"   : { "space" : 0, "width" : 40 , "height" : 40},
+        "VIA1" : { "space" : 22, "width" : 20 , "height" : 20},
+        "VIA2" : { "space" : 22, "width" : 20 , "height" : 20},
+        "VIA3" : { "space" : 22, "width" : 20 , "height" : 20},
+        "VIA4" : { "space" : 22, "width" : 20 , "height" : 20},
+        "VIA5" : { "space" : 22, "width" : 20 , "height" : 20},
+
+        "PDIFF" :{ "PTAPCencOpposite" : 8, "enclosure" : 8,"PTAPCenclosure" : 8},
+        "PTAP" :{ "PTAPCencOpposite" : 8, "enclosure" : 8,"PTAPCenclosure" : 8},
+
+        "PLVT"   : { "space" : 60, "width" : 16 , "mingatelength" : 16, "enclosure" : 4},
+        "NLVT"   : { "space" : 60, "width" : 16, "mingatelength" : 16, "enclosure" : 4},
+
+        "PO"   : { "space" : 60, "width" : 14 , "mingatelength" : 14, "enclosure" : 4},
+        "POB"   : { "space" : 60, "width" : 38 , "mingatelength" : 38, "enclosure" : 4},
+
+        "OD"   : { "space" : 28, "enclosure" : 8, "PTAPCenclosure" : 8, "COencOpposite" : 8, "PTAPCencOpposite" : 8},
+        "ODB"   : { "space" : 28, "enclosure" : 8, "COencOpposite" : 8},
+
+        "NDIFFC"   : { "width" : 20},
+        "PDIFFC"   : { "width" : 20},
+
+        "M1"   : { "space" : 22, "width" : 20, "minwidth":20, "VIA1enclosure" : 0.5, "VIA1encOpposite" : 7, "capspace" : 32, "PTAPCenclosure": 0},
+        "M2"   : { "space" : 22, "width" : 20, "minwidth":20, "VIA1enclosure" : 0.5, "VIA1encOpposite" : 7, "VIA2enclosure" : 0.5, "VIA2encOpposite" : 7, "capspace" : 32},
+        "M3"   : { "space" : 22, "width" : 20, "minwidth":20, "VIA2enclosure" : 0.5, "VIA2encOpposite" : 7, "VIA3enclosure" : 0.5,"VIA3encOpposite" : 7, "capspace" : 32, "cap_width": 32},
+        "M4"   : { "space" : 22, "width" : 20, "minwidth":20, "VIA3enclosure" : 0.5, "VIA3encOpposite" : 7, "VIA4enclosure" : 0.5, "VIA4encOpposite" : 7, "capspace" : 32, "cap_width": 32},
+        "M5"   : { "space" : 22, "width" : 20, "minwidth":20, "VIA4enclosure" : 0.5, "VIA4encOpposite" : 7, "VIA5enclosure" : 0.5, "VIA5encOpposite" : 7, "capspace" : 32, "cap_width": 32},
+
+
+        "OP"   : { "POenclosure" : 0, "POencOpposite" : 80},
+        "RE"   : { "POenclosure" : 96},
+        "PRES" : { "POenclosure" : 96}
+
+    }
+}

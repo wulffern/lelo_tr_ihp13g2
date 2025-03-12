@@ -3,6 +3,7 @@
 __pycache__
 output_*/
 archive/
+*.net
 *.tcl
 *.log
 work/

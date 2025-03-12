@@ -1,0 +1,38 @@
+magic
+tech ihp-sg13g2
+magscale 1 2
+timestamp 1741734000
+<< checkpaint >>
+rect 0 0 1628 800
+<< metal1 >>
+rect 286 620 418 660
+rect 418 380 594 420
+rect 418 380 458 660
+rect 198 140 374 180
+rect 198 300 374 340
+rect 506 700 682 740
+<< metal4 >>
+rect 946 0 1098 800
+rect 506 0 658 800
+rect 946 0 1098 800
+rect 506 0 658 800
+use LELOTR_NDX1_CV XA1 
+transform 1 0 0 0 1 0
+box 0 0 1628 480
+use LELOTR_IVX1_CV XA2 
+transform 1 0 0 0 1 480
+box 0 480 1628 800
+<< labels >>
+flabel metal1 s 198 140 374 180 0 FreeSans 400 0 0 0 A
+port 1 nsew signal bidirectional
+flabel metal1 s 198 300 374 340 0 FreeSans 400 0 0 0 B
+port 2 nsew signal bidirectional
+flabel metal1 s 506 700 682 740 0 FreeSans 400 0 0 0 Y
+port 3 nsew signal bidirectional
+flabel metal4 s 946 0 1098 800 0 FreeSans 400 0 0 0 AVDD
+port 4 nsew signal bidirectional
+flabel metal4 s 506 0 658 800 0 FreeSans 400 0 0 0 AVSS
+port 5 nsew signal bidirectional
+<< properties >>
+string FIXED_BBOX 0 0 1628 800
+<< end >>

@@ -1,0 +1,28 @@
+magic
+tech ihp-sg13g2
+magscale 1 2
+timestamp 1741734000
+<< checkpaint >>
+rect 0 0 1400 1400
+<< metal6 >>
+rect 0 0 1400 100
+rect 0 0 1400 100
+rect 0 0 1400 1400
+<< metal5 >>
+rect 0 0 1400 100
+rect 0 0 1400 100
+rect 0 0 1400 1400
+<< via6 >>
+rect 240 240 1160 1160
+<< mimcap >>
+rect 120 120 1280 1280
+<< mimcapcontact >>
+rect 180 180 1220 1220
+<< labels >>
+flabel metal6 s 0 0 1400 100 0 FreeSans 400 0 0 0 A
+port 2 nsew signal bidirectional
+flabel metal5 s 0 0 1400 100 0 FreeSans 400 0 0 0 B
+port 1 nsew signal bidirectional
+<< properties >>
+string FIXED_BBOX 0 0 1400 1400
+<< end >>

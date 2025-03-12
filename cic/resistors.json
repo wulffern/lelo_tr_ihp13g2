@@ -1,0 +1,178 @@
+{
+    "cells" : [
+        { "name" : "RES2",
+          "class" : "cIcCore::PatternHighResistorNoBulk",
+          "yoffset": -0.5,
+          "xoffset": -0.5,
+          "polyWidthAdjust" : 0,
+          "afterNew" :{
+          },
+          "fillCoordinatesFromStrings" : [
+              [   "PO",
+                  "-------",
+                  "-------",
+                  "--X-X--",
+                  "--X-X--",
+                  "--X-X--",
+                  "-------",
+                  "-------",
+                  "-------",
+                  "-------",
+                  "--X-X--",
+                  "--X-X--",
+                  "--X-X--"
+              ],
+              [   "POXR",
+                  "-------",
+                  "-------",
+                  "-------",
+                  "-------",
+                  "-------",
+                  "--X-X--",
+                  "--X-X--",
+                  "--X-X--",
+                  "--X-X--",
+                  "-------",
+                  "-------",
+                  "-------"
+              ],
+              [   "DMYPO",
+                  "-------",
+                  "-------",
+                  "X-----X",
+                  "X-----X",
+                  "X-----X",
+                  "X-----X",
+                  "X-----X",
+                  "X-----X",
+                  "X-----X",
+                  "X-----X",
+                  "X-----X",
+                  "X-----X"
+              ],
+              [   "PCO",
+                  "-------",
+                  "-------",
+                  "-------",
+                  "--U-U--",
+                  "-------",
+                  "-------",
+                  "-------",
+                  "-------",
+                  "-------",
+                  "-------",
+                  "--U-U--",
+                  "-------"
+              ],
+              [ "M1",
+                "NXX-XXP",
+                "--X-X--",
+                "--X-X--",
+                "--X-X--",
+                "--X-X--",
+                "-------",
+                "-------",
+                "-------",
+                "-------",
+                "--XXX--",
+                "--XXX--",
+                "--XXX--"
+              ]
+
+          ],
+
+
+          "afterNew" :{
+              "horizontalGridMultiplier" : 3,
+              "verticalGridMultiplier" : 2,
+               "copyColumns": [
+                   //{"count": 1,"offset": 1,"length": 1},
+                   //{"count": 1,"offset": 4,"length": 1},
+                   //{"count": 1,"offset": 7,"length": 1}
+                ],
+              "copyRows" :[
+                  {"count": 4,"offset": 7,"length": 1}
+              ]
+          },
+          "beforePlace" :{
+              "addEnclosuresByRectangle" : [
+                  ["PO",[0,3,"width",8],["OP"]],
+                  ["PO",["self"],["PWT"]]
+              ]
+          }
+        },
+        {
+            "name" : "RES4",
+            "inherit" : "RES2",
+            "afterNew" : {
+            "copyColumns" :[
+                  { "count" : 1, "offset" : 1,"length" : 6}
+              ]
+                }
+        },
+        {
+            "name" : "RES8",
+            "inherit" : "RES2",
+            "afterNew" : {
+            "copyColumns" :[
+                  { "count" : 3, "offset" : 1,"length" : 6}
+              ]
+                }
+        },
+        {
+            "name" : "RES16",
+            "inherit" : "RES2",
+            "afterNew" : {
+            "copyColumns" :[
+                  { "count" : 7, "offset" : 1,"length" : 6}
+              ]
+                }
+        },
+        { "name" : "RPPO2",
+          "class" : "Layout::LayoutDigitalCell",
+          "boundaryIgnoreRouting" : 0,
+          "composite" : 1,
+          "meta" : {
+              "symbol" : "cic/res"
+          },
+          "spice": [".subckt RPPO2 P N B",
+                    "XA1 N P  RES2",
+                    ".ends"
+                   ],
+          "afterPlace" : {
+              "addGuard" : [ "B", 3 , ["PTAP"] ]
+          },
+          "afterRoute"  : {
+              "addPortOnRects" : [  ["P","M1"] , ["N", "M1"]]
+          },
+          "afterPaint" :{
+              "resetOrigin" : 1
+          }
+        },
+        { "name" : "RPPO4",
+          "class" : "Layout::LayoutDigitalCell",
+          "leech" :"RPPO2",
+          "spice": [".subckt RPPO4 P N B",
+                    "XA1 N P  RES4",
+                    ".ends"
+                   ]
+        },
+         { "name" : "RPPO8",
+          "class" : "cIcCore::LayoutCell",
+           "leech" :"RPPO2",
+          "spice": [".subckt RPPO8 P N B",
+                    "XA1 N P  RES8",
+                    ".ends"
+                   ]
+        },
+         { "name" : "RPPO16",
+          "class" : "Layout::LayoutDigitalCell",
+           "leech" :"RPPO2",
+          "spice": [".subckt RPPO16 P N B",
+                    "XA1 N P  RES16",
+                    ".ends"
+                   ]
+        }
+
+    ]
+}

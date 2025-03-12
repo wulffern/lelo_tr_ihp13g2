@@ -1,0 +1,142 @@
+magic
+tech ihp-sg13g2
+magscale 1 2
+timestamp 1741734000
+<< checkpaint >>
+rect 0 0 1628 1440
+<< metal1 >>
+rect 594 220 726 260
+rect 594 540 726 580
+rect 594 860 726 900
+rect 594 1180 726 1220
+rect 726 220 1034 260
+rect 726 540 1034 580
+rect 726 860 1034 900
+rect 726 1180 1034 1220
+rect 726 220 766 1220
+rect 266 140 306 1300
+rect 1322 140 1362 1300
+rect 198 140 374 180
+rect 506 220 682 260
+<< poly >>
+rect 242 146 1386 174
+rect 242 306 1386 334
+rect 242 466 1386 494
+rect 242 626 1386 654
+rect 242 786 1386 814
+rect 242 946 1386 974
+rect 242 1106 1386 1134
+rect 242 1266 1386 1294
+<< metal4 >>
+rect 946 0 1098 1440
+rect 506 0 658 1440
+rect 946 0 1098 1440
+rect 506 0 658 1440
+use LELOTR_NCHDL MN0 
+transform 1 0 0 0 1 0
+box 0 0 814 320
+use LELOTR_NCHDL MN1 
+transform 1 0 0 0 1 160
+box 0 160 814 480
+use LELOTR_NCHDL MN2 
+transform 1 0 0 0 1 320
+box 0 320 814 640
+use LELOTR_NCHDL MN3 
+transform 1 0 0 0 1 480
+box 0 480 814 800
+use LELOTR_NCHDL MN4 
+transform 1 0 0 0 1 640
+box 0 640 814 960
+use LELOTR_NCHDL MN5 
+transform 1 0 0 0 1 800
+box 0 800 814 1120
+use LELOTR_NCHDL MN6 
+transform 1 0 0 0 1 960
+box 0 960 814 1280
+use LELOTR_NCHDL MN7 
+transform 1 0 0 0 1 1120
+box 0 1120 814 1440
+use LELOTR_PCHDL MP0 
+transform 1 0 814 0 1 0
+box 814 0 1628 320
+use LELOTR_PCHDL MP1 
+transform 1 0 814 0 1 160
+box 814 160 1628 480
+use LELOTR_PCHDL MP2 
+transform 1 0 814 0 1 320
+box 814 320 1628 640
+use LELOTR_PCHDL MP3 
+transform 1 0 814 0 1 480
+box 814 480 1628 800
+use LELOTR_PCHDL MP4 
+transform 1 0 814 0 1 640
+box 814 640 1628 960
+use LELOTR_PCHDL MP5 
+transform 1 0 814 0 1 800
+box 814 800 1628 1120
+use LELOTR_PCHDL MP6 
+transform 1 0 814 0 1 960
+box 814 960 1628 1280
+use LELOTR_PCHDL MP7 
+transform 1 0 814 0 1 1120
+box 814 1120 1628 1440
+use LELOTR_cut_M1M4_2x1 xcut0 
+transform 1 0 946 0 1 60
+box 946 60 1098 102
+use LELOTR_cut_M1M4_2x1 xcut1 
+transform 1 0 946 0 1 380
+box 946 380 1098 422
+use LELOTR_cut_M1M4_2x1 xcut2 
+transform 1 0 946 0 1 380
+box 946 380 1098 422
+use LELOTR_cut_M1M4_2x1 xcut3 
+transform 1 0 946 0 1 700
+box 946 700 1098 742
+use LELOTR_cut_M1M4_2x1 xcut4 
+transform 1 0 946 0 1 700
+box 946 700 1098 742
+use LELOTR_cut_M1M4_2x1 xcut5 
+transform 1 0 946 0 1 1020
+box 946 1020 1098 1062
+use LELOTR_cut_M1M4_2x1 xcut6 
+transform 1 0 946 0 1 1020
+box 946 1020 1098 1062
+use LELOTR_cut_M1M4_2x1 xcut7 
+transform 1 0 946 0 1 1340
+box 946 1340 1098 1382
+use LELOTR_cut_M1M4_2x1 xcut8 
+transform 1 0 506 0 1 60
+box 506 60 658 102
+use LELOTR_cut_M1M4_2x1 xcut9 
+transform 1 0 506 0 1 380
+box 506 380 658 422
+use LELOTR_cut_M1M4_2x1 xcut10 
+transform 1 0 506 0 1 380
+box 506 380 658 422
+use LELOTR_cut_M1M4_2x1 xcut11 
+transform 1 0 506 0 1 700
+box 506 700 658 742
+use LELOTR_cut_M1M4_2x1 xcut12 
+transform 1 0 506 0 1 700
+box 506 700 658 742
+use LELOTR_cut_M1M4_2x1 xcut13 
+transform 1 0 506 0 1 1020
+box 506 1020 658 1062
+use LELOTR_cut_M1M4_2x1 xcut14 
+transform 1 0 506 0 1 1020
+box 506 1020 658 1062
+use LELOTR_cut_M1M4_2x1 xcut15 
+transform 1 0 506 0 1 1340
+box 506 1340 658 1382
+<< labels >>
+flabel metal1 s 198 140 374 180 0 FreeSans 400 0 0 0 A
+port 1 nsew signal bidirectional
+flabel metal1 s 506 220 682 260 0 FreeSans 400 0 0 0 Y
+port 2 nsew signal bidirectional
+flabel metal4 s 946 0 1098 1440 0 FreeSans 400 0 0 0 AVDD
+port 3 nsew signal bidirectional
+flabel metal4 s 506 0 658 1440 0 FreeSans 400 0 0 0 AVSS
+port 4 nsew signal bidirectional
+<< properties >>
+string FIXED_BBOX 0 0 1628 1440
+<< end >>

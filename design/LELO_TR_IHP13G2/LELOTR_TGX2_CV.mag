@@ -1,0 +1,89 @@
+magic
+tech ihp-sg13g2
+magscale 1 2
+timestamp 1741734000
+<< checkpaint >>
+rect 0 0 1628 960
+<< metal1 >>
+rect 594 60 726 100
+rect 726 60 1034 100
+rect 726 60 766 100
+rect 506 540 1122 580
+rect 506 860 1122 900
+rect 506 380 1122 420
+rect 506 700 1122 740
+rect 114 140 286 180
+rect 114 460 286 500
+rect 114 780 286 820
+rect 114 140 154 820
+rect 1034 60 1166 100
+rect 1166 460 1342 500
+rect 1166 60 1206 500
+rect 1322 460 1362 820
+rect 1254 140 1430 180
+rect 506 380 682 420
+rect 506 540 682 580
+<< poly >>
+rect 242 146 1386 174
+<< metal2 >>
+rect 422 540 594 580
+rect 422 860 594 900
+rect 422 540 462 900
+rect 862 380 1034 420
+rect 862 700 1034 740
+rect 862 380 902 740
+<< metal4 >>
+rect 946 0 1098 960
+rect 506 0 658 960
+rect 946 0 1098 960
+rect 506 0 658 960
+use LELOTR_NCHDL MN0 
+transform 1 0 0 0 1 0
+box 0 0 814 320
+use LELOTR_NCHDL MN1 
+transform 1 0 0 0 1 320
+box 0 320 814 640
+use LELOTR_NCHDL MN1b 
+transform 1 0 0 0 1 640
+box 0 640 814 960
+use LELOTR_PCHDL MP0 
+transform 1 0 814 0 1 0
+box 814 0 1628 320
+use LELOTR_PCHDL MP1 
+transform 1 0 814 0 1 320
+box 814 320 1628 640
+use LELOTR_PCHDL MP1b 
+transform 1 0 814 0 1 640
+box 814 640 1628 960
+use LELOTR_cut_M1M2_2x1 xcut0 
+transform 1 0 506 0 1 540
+box 506 540 658 582
+use LELOTR_cut_M1M2_2x1 xcut1 
+transform 1 0 506 0 1 860
+box 506 860 658 902
+use LELOTR_cut_M1M2_2x1 xcut2 
+transform 1 0 946 0 1 380
+box 946 380 1098 422
+use LELOTR_cut_M1M2_2x1 xcut3 
+transform 1 0 946 0 1 700
+box 946 700 1098 742
+use LELOTR_cut_M1M4_2x1 xcut4 
+transform 1 0 946 0 1 220
+box 946 220 1098 262
+use LELOTR_cut_M1M4_2x1 xcut5 
+transform 1 0 506 0 1 220
+box 506 220 658 262
+<< labels >>
+flabel metal1 s 1254 140 1430 180 0 FreeSans 400 0 0 0 C
+port 2 nsew signal bidirectional
+flabel metal1 s 506 380 682 420 0 FreeSans 400 0 0 0 A
+port 1 nsew signal bidirectional
+flabel metal1 s 506 540 682 580 0 FreeSans 400 0 0 0 B
+port 3 nsew signal bidirectional
+flabel metal4 s 946 0 1098 960 0 FreeSans 400 0 0 0 AVDD
+port 4 nsew signal bidirectional
+flabel metal4 s 506 0 658 960 0 FreeSans 400 0 0 0 AVSS
+port 5 nsew signal bidirectional
+<< properties >>
+string FIXED_BBOX 0 0 1628 960
+<< end >>

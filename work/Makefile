@@ -9,9 +9,9 @@
 # drc: Run design rule checks on ../design/<LIB>/<CELL>.mag
 # -----------------------------------------------------------
 
-PREFIX=
+PREFIX=LELOTR_
 LIB=LELO_TR_IHP13G2
-CELL=LELO_TR
+CELL=TOP
 
 #- Provide cells you want to check for the lvsall drcall commands
 CELLS = LELO_TR

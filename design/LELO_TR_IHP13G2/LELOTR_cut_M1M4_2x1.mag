@@ -1,0 +1,27 @@
+magic
+tech ihp-sg13g2
+magscale 1 2
+timestamp 1741734000
+<< checkpaint >>
+rect 0 0 152 42
+<< metal1 >>
+rect 0 0 152 42
+<< via1 >>
+rect 14 1 54 41
+rect 98 1 138 41
+<< metal2 >>
+rect 0 0 152 42
+<< via2 >>
+rect 14 1 54 41
+rect 98 1 138 41
+<< metal3 >>
+rect 0 0 152 42
+<< via3 >>
+rect 14 1 54 41
+rect 98 1 138 41
+<< metal4 >>
+rect 0 0 152 42
+<< labels >>
+<< properties >>
+string FIXED_BBOX 0 0 152 42
+<< end >>
