@@ -1,0 +1,9 @@
+#- Carsten's PDK. Borders, symbols, loop stability
+cpdk:
+  remote: git@github.com:wulffern/cpdk.git
+  revision: main
+
+#- Technology library
+tech_ihp13g2:
+  remote: git@github.com:wulffern/tech_ihp13g2.git
+  revision: main

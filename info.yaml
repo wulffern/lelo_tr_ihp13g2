@@ -1,0 +1,20 @@
+library: LELO_TR_IHP13G2
+cell: LELO_TR
+# Your name
+author: Anonymous
+# Your github username
+github: analogicus
+# Something funny and descriptive
+tagline: The answer is 42
+# Your email, if you so wish
+email: anon@anon.com
+# Your github site, usually <github username>.github.io
+url: analogicus.github.io
+doc:
+  # Make docs
+  #libraries:
+  #   <library>:
+  #       - <cell>
+  #       - <cell>
+sim:
+  # <simdir>: command
