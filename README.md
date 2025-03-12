@@ -25,8 +25,8 @@ consider learning verilog and openlane. It will be smaller.
 
 | What      | Path                                                                       | Comment    |
 |:----------|:---------------------------------------------------------------------------|:-----------|
-| Schematic | [design/LELO_TR_SKY130A/LELOTR_TOP.sch](design/LELO_TR_SKY130A/LELOTR_TOP.sch) |            |
-| Layout    | [design/LELO_TR_SKY130A/LELOTR_TOP.mag](design/LELO_TR_SKY130A/LELOTR_TOP.mag) |            |
+| Schematic | [design/LELO_TR_IHP13G2/LELOTR_TOP.sch](design/LELO_TR_IHP13G2/LELOTR_TOP.sch) |            |
+| Layout    | [design/LELO_TR_IHP13G2/LELOTR_TOP.mag](design/LELO_TR_IHP13G2/LELOTR_TOP.mag) |            |
 
 
 # Changelog/Plan
