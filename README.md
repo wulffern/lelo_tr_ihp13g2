@@ -39,6 +39,8 @@ consider learning verilog and openlane. It will be smaller.
 # Transistors
 
 
+| Cell  | Description |
+|:------|:------------|
 | NCHDL | Unit NMOS   |
 | PCHDL | Unit PMOS   |
 
