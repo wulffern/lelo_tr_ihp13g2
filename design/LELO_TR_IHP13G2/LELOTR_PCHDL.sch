@@ -8,7 +8,7 @@ C {devices/iopin.sym} 0 0 0 0 {name=p0 lab=D}
 C {devices/iopin.sym} 0 20 0 0 {name=p1 lab=G}
 C {devices/iopin.sym} 0 40 0 0 {name=p2 lab=S}
 C {devices/iopin.sym} 0 60 0 0 {name=p3 lab=B}
-C {sg13g2_pr/sg13_lv_pmos.sym} 400 0 0 0 {name=M1
+C {sg13g2_pr/sg13_lv_pmos.sym} 400 0 0 0 {name=XM1
 l=0.14u
 w=0.88u
 ng=1

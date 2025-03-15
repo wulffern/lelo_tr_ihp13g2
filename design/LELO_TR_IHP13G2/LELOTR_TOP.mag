@@ -1,24 +1,24 @@
 magic
 tech ihp-sg13g2
 magscale 1 2
-timestamp 1741734000
+timestamp 1741993200
 << checkpaint >>
-rect -880 -880 32196 7280
+rect -880 -880 32636 7280
 << metal1 >>
-rect 31604 -440 31756 6840
-rect -440 -440 31756 -288
-rect -440 6688 31756 6840
+rect 32044 -440 32196 6840
+rect -440 -440 32196 -288
+rect -440 6688 32196 6840
 rect -440 -440 -288 6840
-rect 31604 -440 31756 6840
+rect 32044 -440 32196 6840
 rect 9960 -440 11280 128
 rect 11488 -440 13600 128
 rect 13808 -440 17504 128
 rect 17712 -440 24576 128
-rect 32044 -880 32196 7280
-rect -880 -880 32196 -728
-rect -880 7128 32196 7280
+rect 32484 -880 32636 7280
+rect -880 -880 32636 -728
+rect -880 7128 32636 7280
 rect -880 -880 -728 7280
-rect 32044 -880 32196 7280
+rect 32484 -880 32636 7280
 << metal4 >>
 rect 506 -440 658 320
 rect 506 -440 658 640
@@ -163,8 +163,8 @@ use LELOTR_DFRNQNX1_CV XN2
 transform 1 0 28288 0 1 320
 box 28288 320 29916 4160
 use LELOTR_CAPX1 XO0 
-transform -1 0 31316 0 1 240
-box 31316 240 32716 1640
+transform -1 0 31756 0 1 240
+box 31756 240 33156 1640
 use LELOTR_cut_M1M4_2x2 xcut0 
 transform 1 0 506 0 1 -440
 box 506 -440 658 -288
@@ -322,10 +322,10 @@ use LELOTR_cut_M1M4_2x2 xcut51
 transform 1 0 29234 0 1 -880
 box 29234 -880 29386 -728
 << labels >>
-flabel metal1 s 31604 -440 31756 6840 0 FreeSans 400 0 0 0 AVSS
+flabel metal1 s 32044 -440 32196 6840 0 FreeSans 400 0 0 0 AVSS
 port 2 nsew signal bidirectional
-flabel metal1 s 32044 -880 32196 7280 0 FreeSans 400 0 0 0 AVDD
+flabel metal1 s 32484 -880 32636 7280 0 FreeSans 400 0 0 0 AVDD
 port 1 nsew signal bidirectional
 << properties >>
-string FIXED_BBOX -880 -880 32196 7280
+string FIXED_BBOX -880 -880 32636 7280
 << end >>
